@@ -1,0 +1,66 @@
+# Computernetwerken Studie-GPS
+
+## Inleiding
+
+### Doel
+
+### Indeling
+
+### Methode
+
+### Oproep voor feedback
+
+### Tip
+
+## Deel 1: Je netwerk thuis begrijpen
+
+### Voorbereiding (packet tracer/wireshark)
+
+### Eén IPv4 netwerk
+
+### IPv4 adressen
+
+### Twee IPv4 netwerken / één router
+
+### Drie (of meer) IPv4 netwerken / statische routering
+
+### OSI model intro (L1-L3)
+
+### ARP en ICMP, PT simulatie
+
+### Ethernet switching / life of a packet
+
+### IPv4 subnetting
+
+### IPv6
+
+### OSI vervolg, TCP/UDP, client-server, DNS/...
+
+### IPv4 dynamische adressering (DHCP)
+
+### IPv6 dynamische adressering
+
+### NAT (IPv4)
+
+### je eigen thuisnetwerk begrijpen
+
+
+
+## Deel 2: technologieën in een bedrijfsnetwerk
+
+### SVI en loopback
+
+### paswoorden / SSH
+
+### VLAN's
+
+### multi-layer switches (MLS)
+
+### OSPF (v2)
+
+### STP
+
+### Linkaggregatie (Etherchannel)
+
+### Access control lists
+
