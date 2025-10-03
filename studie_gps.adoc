@@ -706,15 +706,165 @@ Wat je niet moet kennen/kunnen voor deze stap:
 
 ### IPv4 dynamische adressering (DHCP)
 
+Je bent klaar met deze stap wanneer je het volgende kent of kan:
+
+Kennis:
+
+- je begrijpt de bedoeling van DHCP
+- je weet welke extra configuratie (behalve IPv4 adres) via DHCP kan
+    doorgegeven worden
+- je weet dat het eerste pakket dat een DHCP client stuurt, een DHCP
+    discover is, en dat dit een IPv4 broadcast pakket is
+- je weet waarom een DHCP server in het eigen netwerk moet zitten
+    (tenzij er een relay is) ; je begrijpt dus het nut van een DHCP
+    relay
+- je weet dat communicatie tussen DHCP relay en DHCP server unicast is
+
+Packet tracer:
+
+- je kan een DHCP server configureren op een Cisco router
+- je kan hosts configureren om DHCP client te zijn
+- je kan ook een Cisco router interface configuren om DHCP client te
+    zijn
+- je kan een DHCP relay opzetten
+- je kan DNS informatie en domeinnaam meegeven bij de DHCP
+    configuratie
+- je kan een PC in packet tracer het DHCP proces laten (her)starten,
+    je kent release en renew opties in de ipconfig command prompt
+
+Eigen computer:
+
+- heb je al eens een dhcp release/renew gedaan op je eigen computer?
+- doe het ook eens terwijl wireshark draait.
+
+Vraag: heb je al eens nagekeken van welk L4 protocol DHCP gebruikmaakt?
+Kijk het eens na in een packet tracer simulatie. Of controleer het in
+Wireshark op je eigen computer.
+
+
 ### IPv6 dynamische adressering
+
+IPv6 kent ook DHCP. Maar IPv6 heeft meer dan de klassieke DHCP, dus het
+automatisch configureren van hosts is wat complexer. In deze stap leer
+je over SLAAC en DHCPv6.
+
+Je bent klaar met deze stap wanneer je het volgende kent of kan:
+
+- je weet dat er drie manier bestaan om automatisch IPv6 hosts te
+    configureren: (1) SLAAC only, (2) SLAAC met stateless DHCP, en (3)
+    DHCPv6
+- je kan de verschillen tussen deze 3 methodes uitleggen
+- je kan deze drie methodes uitvoeren in een router in Cisco packet
+    tracer
+- je weet dat onderliggend de Network Discovery (ND of NDP) pakketten
+    van type Router Advertisement (RA) en Router Solicitation (RS) een
+    rol spelen bij SLAAC/DHCPv6
+- je kan deze drie methodes van dynamische IPv6 configuratie
+    troubleshooten
+
+Wat je niet moet kennen/kunnen voor deze stap:
+
+- je hoeft niet alle RA vlaggen die van belang zijn voor SLAAC/DHCPv6
+    uit het hoofd te kennen; maar je moet het wel kunnen opzoeken,
+    toepassen, en fouten vinden, dus ook alles kunnen verklaren met je
+    cursus of nota's ernaast.
 
 ### NAT (IPv4)
 
+Je bent klaar met deze stap wanneer je het volgende kent of kan:
+
+Kennis:
+
+- je snapt de hoofdreden dat NAT nog vaak gebruikt wordt (met name:
+    gebrek aan IPv4 publieke adressen)
+- je kent de acroniemen NAT en PAT
+- je weet dat PAT het zelfde is als dynamic NAT met overload
+- je begrijpt het basisprincipe achter statische NAT
+- je begrijpt dat statische NAT de mogelijkheid biedt om een server in
+    het private netwerk van buitenaf bereikbaar te maken (terwijl dat
+    bij dynamische NAT niet kan werken)
+- je begrijpt het basisprincipe achter dynamische NAT zonder overload,
+    je weet dus welk deel in een data frame wordt aangepast door het NAT
+    proces
+- je begrijpt het basisprincipe achter NAT met overload (PAT), je weet
+    dus dat er behalve een IPv4 adres mogelijk ook een L4 poort wordt
+    aangepast
+- je begrijpt hoe een NAT router de pakketten van binnen naar buiten
+    aanpast, maar ook hoe de NAT router de bijhorende pakketten (meestal
+    de "responses") van buiten naar binnen terug aanpast
+- je weet dat onze home routers thuis meestal dynamic NAT met overload
+    doen, en je snapt waarom
+- je snapt dat een ping door dynamische NAT maar in één richting kan
+    gestart worden, terwijl er uiteindelijk toch in twee richtingen
+    (request/reply) pakketten doorkomen
+
+Packet tracer:
+
+- je kan NAT configureren op een Cisco router, zowel statisch als
+    dynamisch, en voor dynamisch zowel met als zonder overload
+- je kan via simulatie in packet tracer aantonen dat NAT zijn werk
+    juist doet
+
+Life of a packet:
+
+- je kan de "life of a packet" foutloos toepassen op situaties met een
+    NAT, d.w.z. je weet van een pakketje op elke plaats in het netwerk
+    wat het MAC-adres is en wat het IP-adres is
+
+Wat je niet moet kennen/kunnen:
+
+- je hoeft geen NAT voor IPv6 te kennen
+- je hoeft geen NAT64 te kennen
+
 ### je eigen thuisnetwerk begrijpen
 
+Probeer nu eens de volgende vragen te beantwoorden en/of opdrachten uit
+te voeren:
 
+- wat is het IPv4 adres van je eigen computer?
+- zit je achter een NAT voor IPv4? (tip: de kans is groot)
+- hoe zou je kunnen zien dat je achter een NAT zit? tip: er bestaan
+    webservers die het IPv4 adres waarnaar zij hun antwoorden
+    terugsturen, op de webpagina laten zien; snap je hoe dit werkt?
+- je begrijpt dat als het IPv4 adres dat je computer heeft niet
+    overeenkomt met het IPv4 adres waarnaar een web server zijn
+    antwoorden stuurt, je wel achter een NAT moet zitten
+- heb je een IPv6 adres, en kan je daarmee op het internet? en zo ja:
+    zit je voor IPv6 ook achter een NAT? of ziet de server op het
+    internet het IPv6 adres van jouw computer?
+- heb je het netwerk dat je thuis gebruikt al eens in kaart gebracht?
+    heb je maar 1 toestel (bvb. de modem-router van de provider) of heb
+    je meerdere toestellen? indien meerdere: weet je waarvoor die andere
+    toestellen dienen? Mogelijk dienen die andere toestellen vooral om
+    je draadloze toegang te verschaffen.
+- heb je al eens nagedacht wat er allemaal in een router van jouw
+    provider zit?
+
+Een paar links (helaas met veel reclame):
+
+- <https://whatismyipaddress.com/>
+- <https://www.showmyip.com/>
+
+Wat er typisch in een -router zit:
+
+- meestal een combinatie van
+    - een "modem" of iets dergelijks; intern in jouw huis heb je
+        ethernet of Wifi, naar buiten toe zal het misschien een oude
+        technologie zijn zoals de coaxkabel van de TV distributie, of de
+        telefoonkabel van de vroegere analoge telefoon waar nu VDSL
+        modulatie op gebruikt wordt; dit moet dus geconverteerd worden
+    - een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
+        netwerk is dan het netwerk van jouw provider)
+    - een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
+        gebruikt voor al jouw toestellen thuis)
+    - een switch (om meer dan 1 poort/interface in jouw thuisnetwerk
+        te hebben)
+    - een access point (om draadloos toegang te hebben)
+    - de switch laat toe dat je meerdere apparaten
 
 ## Deel 2: technologieën in een bedrijfsnetwerk
+
+TODO. Alleen de titels van de stappen zijn al aangemaakt.
 
 ### SVI en loopback
 
