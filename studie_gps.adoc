@@ -1,4 +1,6 @@
 # Computernetwerken Studie-GPS
+:toc:
+:toclevels: 3
 
 ## Inleiding
 
@@ -63,4 +65,3 @@
 ### Linkaggregatie (Etherchannel)
 
 ### Access control lists
-
