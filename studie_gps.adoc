@@ -7,6 +7,7 @@
 
 ### Doel
 Deze studie-GPS heeft als doel:
+
 - Een alternatieve volgorde aanbieden om de leerstof te     
   studeren/herhalen (andere volgorde dan Jeremy's IT Labs, andere     volgorde dan Cisco Netacad CCNA)
 - Checklists om je te helpen nagaan of je klaar bent met een onderdeel
@@ -17,6 +18,7 @@ Deze studie-GPS heeft als doel:
 
 ### Indeling
 Deze studie-GPS is ingedeeld in twee delen:
+
 - Eerst leer je voldoende om de werking van een typisch thuisnetwerk    te begrijpen
 - Daarna leer je netwerktechnologie die je meestal niet in een     thuisnetwerk tegenkomt, maar wel in het netwerk van een school of     
   een bedrijf
