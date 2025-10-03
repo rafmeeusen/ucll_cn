@@ -7,17 +7,19 @@
 
 ### Doel
 Deze studie-GPS heeft als doel:
-- Een alternatieve volgorde aanbieden om de leerstof te     studeren/herhalen (andere volgorde dan Jeremy's IT Labs, andere     volgorde dan Cisco Netacad CCNA)
+- Een alternatieve volgorde aanbieden om de leerstof te     
+  studeren/herhalen (andere volgorde dan Jeremy's IT Labs, andere     volgorde dan Cisco Netacad CCNA)
 - Checklists om je te helpen nagaan of je klaar bent met een onderdeel
 - Toelichten hoe gedetailleerd je een onderwerp moet kennen
 - Extra aandacht geven aan foutopsporing
-- Je aanmoedigen om soms bewust iets verkeerd te configureren en dan
-    na te gaan of het effectief misloopt waar jij het verwacht
+- Je aanmoedigen om soms bewust iets verkeerd te configureren en dan    
+  na te gaan of het effectief misloopt waar jij het verwacht
 
 ### Indeling
 Deze studie-GPS is ingedeeld in twee delen:
 - Eerst leer je voldoende om de werking van een typisch thuisnetwerk    te begrijpen
-- Daarna leer je netwerktechnologie die je meestal niet in een     thuisnetwerk tegenkomt, maar wel in het netwerk van een school of     een bedrijf
+- Daarna leer je netwerktechnologie die je meestal niet in een     thuisnetwerk tegenkomt, maar wel in het netwerk van een school of     
+  een bedrijf
 In deze cursus behandelen we geen draadloze netwerken. Hoewel draadloze netwerken overal voorkomen, blijft alles wat we leren relevant, ook voor netwerken met draadloze eindapparatuur.
 
 ### Methode
