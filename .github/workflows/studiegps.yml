@@ -34,7 +34,7 @@ jobs:
           asciidoctor studie_gps.adoc
           
       - name: Upload HTML artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: studie_gps-html
           path: studie_gps.html
