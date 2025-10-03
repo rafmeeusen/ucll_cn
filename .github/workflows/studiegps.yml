@@ -32,3 +32,9 @@ jobs:
       - name: Convert .adoc to HTML
         run: |
           asciidoctor studie_gps.adoc
+          
+      - name: Upload HTML artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: studie_gps-html
+          path: studie_gps.html
