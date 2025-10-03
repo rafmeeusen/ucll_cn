@@ -54,7 +54,7 @@ van een leeg blad begint te tekenen.
 Zorg nu dat je in Packet Tracer een paar basisvaardigheden opdoet, als
 eerste kennismaking. Wat hierbij kan helpen:
 
-- Jeremy's "Packet Tracer Introduction \| Day 1 Lab"
+- Jeremy's "Packet Tracer Introduction | Day 1 Lab"
   (<https://www.youtube.com/watch?v=a1Im6GYaSno>)
 - Netacad CCNA-1 submodule 2.3.7 Packet Tracer - Navigate the IOS
 - experimenteer zelf wat, teken eens een netwerk vertrekkende van een
