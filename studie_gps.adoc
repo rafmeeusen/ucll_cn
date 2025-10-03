@@ -3,6 +3,7 @@
 :toc:
 :toclevels: 3
 :figure-caption: Figuur
+:sectnums:
 
 ## Inleiding
 
