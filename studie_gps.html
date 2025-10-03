@@ -1160,31 +1160,633 @@ bestemming is? Dit gaan we later zien.</p>
 </div>
 <div class="sect2">
 <h3 id="_drie_of_meer_ipv4_netwerken_statische_routering">Drie (of meer) IPv4 netwerken / statische routering</h3>
-
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="paragraph">
+<p>Packet tracer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je kan statische routes toevoegen aan een routing tabel van een
+router</p>
+</li>
+<li>
+<p>hiermee kan je dus voorgaande figuur met drie netwerken en twee
+routers configureren zodanig dat alle hosts elkaar kunnen pingen</p>
+</li>
+<li>
+<p>je kan statische routering troubleshooten</p>
+</li>
+<li>
+<p>je kan nu willekeurig grote computernetwerken bouwen met vele
+routers en switches, en zorgen dat iedereen met iedereen kan
+communiceren door statische routes toe te voegen</p>
+</li>
+<li>
+<p>je kan een IPv4 default route toevoegen aan een Cisco router</p>
+</li>
+<li>
+<p>je weet dat Cisco switches en routers soms <strong>uitbreidingsslots</strong>
+hebben, en je kan in packet tracer extra interfaces toevoegen aan
+een switch of router; op die manier kan je extra Ethernet interfaces
+toevoegen, voor zowel copper of fiber, zowel SFP als andere</p>
+</li>
+<li>
+<p>je kan in packet tracer Cisco netwerkapparaten verbinden met andere
+types kabel dan Ethernet koper, zoals <strong>seriële kabels</strong> en
+<strong>glasvezelkabels</strong></p>
+</li>
+<li>
+<p>je kan nu ook een configuratie bouwen in packet tracer met 1 router
+en 3 of 4 netwerken aan die ene router (gebruik bvb. router PT-empty
+in packet tracer, en de uitbreidingsslots)</p>
+</li>
+<li>
+<p>je kan het IPv4 adres van router interfaces pingen vanaf
+eindapparaten, en je begrijpt dat je op deze manier ook kan nagaan
+tot waar in het netwerk de routering werkt of vanaf waar routering
+niet meer werkt</p>
+</li>
+<li>
+<p>je kan ook een ping versturen vanaf een router CLI naar eender welk
+ander IP adres</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Kennis:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je begrijpt hoe een router functioneert aan de hand van destination
+IP en de actieve routing tabel; dat wil zeggen dat je zelf kan
+voorspellen wat een router met een pakketjes zal doen als je routing
+tabel en destination IP gegeven hebt</p>
+</li>
+<li>
+<p>je kent het concept "<strong>default route</strong>", je snapt waarvoor dit
+gebruikt wordt</p>
+</li>
+<li>
+<p>je kan vlot in een groot computernetwerk tellen hoeveel IP netwerken
+er zijn</p>
+</li>
+<li>
+<p>je weet dat ook een rechtstreekse link tussen twee routers een apart
+IP netwerk is, en je begrijpt ondertussen waarom dit vaak een /30
+netwerk is</p>
+</li>
+<li>
+<p>je weet dat er nog andere types netwerkinterfaces en -kabels bestaan
+dan de veelgebruikte Ethernet UTP koperparen met RJ45 stekker, zoals
+een STP kabel, een seriële verbinding, een glasvezelkabel (fiber)</p>
+</li>
+<li>
+<p>je weet dat er soorten glasvezelverbindingen zijn, o.a. single mode
+en multimode</p>
+</li>
+<li>
+<p>je weet dat er SFP (small form-factor pluggable) modules bestaan om
+extra interfaces toe te voegen</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_osi_model_intro_l1_l3">OSI model intro (L1-L3)</h3>
-
+<div class="paragraph">
+<p>Vorige stappen: we hebben computernetwerken gebouwd met meerdere
+switches en routers, en we kunnen dankzij statische routering al grote
+bedrijfsnetwerken bouwen die met IPv4 kunnen communiceren. In deze en
+volgende stappen gaan we dieper in hoe dit onderliggend werkt.</p>
+</div>
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je weet dat de IPv4 pakketjes (bijvoorbeeld de ping pakketjes die je
+tot nu toe stuurde over het netwerk) verpakt worden in een "datalink
+frame" (ook encapsulatie genoemd, en het terug uitpakken aan de
+ontvanger decapsulatie)</p>
+</li>
+<li>
+<p>je weet dat dit verpakken/uitpakken van pakketten eigen is aan een
+gelaagd netwerkmodel; je snapt dat een voordeel van zo&#8217;n model is
+dat elke laag zijn eigen verantwoordelijkheid heeft die relatief
+losstaat van de verantwoordelijkheden van de andere lagen</p>
+</li>
+<li>
+<p>je weet dat de netwerklaag in dit model laag 3 (L3) wordt genoemd,
+en de laag eronder (datalink laag) laag 2 (L2) wordt genoemd</p>
+</li>
+<li>
+<p>je weet dat L2 in ethernet ook adressen heeft, en dat deze MAC
+adressen worden genoemd</p>
+</li>
+<li>
+<p>je weet dat de onderste laag (laag 1) de fysieke laag is, en dat we
+al verschillende protocollen zijn tegengekomen voor die L1: Ethernet
+met (elektrische) koperpaar-kabels, Ethernet met (licht-gebaseerde)
+glasvezelkabels, (elektrische) seriële verbindingen (de rode links
+in packet tracer).</p>
+</li>
+<li>
+<p>je weet dat de Ethernet standaard eigenlijk zowel L1 als L2
+beschrijft, en dat Ethernet L2 hetzelfde is voor koperkabels als
+voor glasvezelkabels</p>
+</li>
+<li>
+<p>je begrijpt dat MAC adressen nodig zijn omdat ethernet een broadcast
+standaard is; broadcast wil eigenlijk zeggen dat er ook 3 of meer
+apparaten (3, 4, ...) op eenzelfde kabel kunnen aangesloten worden
+(beschouw een switch hier gerust als een kabel-knooppunt dat gewoon
+kabels doorverbindt, later nog meer over de werking van switches);
+dus de MAC adressen laten toe om data voor een bepaalde bestemming
+te addresseren terwijl er vele bestemmingen het elektrische signaal
+met het data frame ontvangen</p>
+</li>
+<li>
+<p>je weet dat L2 in de seriële verbindingen geen adressen heeft, en
+dat dit ook niet nodig is omdat zo&#8217;n verbinding maar tussen twee
+apparaten is (er bestaan dan ook geen switches voor seriële
+verbindingen)</p>
+</li>
+<li>
+<p>je kan het MAC adres van een PC terugvinden in packet tracer, maar
+ook dat van je eigen (echte) PC</p>
+</li>
+<li>
+<p>je kan het MAC adres van een router interface terugvinden in Cisco
+IOS via de command line</p>
+</li>
+<li>
+<p>je weet dat er op de datalinklaag behalve unicast adressen ook een
+broadcast adres is, en er ook multicast adressen bestaan</p>
+</li>
+<li>
+<p>je weet dat er nog hogere protocollagen zijn (L4, ...), hierover
+meer in een latere stap</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_arp_en_icmp_pt_simulatie">ARP en ICMP, PT simulatie</h3>
-
+<div class="paragraph">
+<p>(ARP: bij Jeremy&#8217;s IT Lab CCNA zit dit bij Ethernet LAN switching Part
+2)</p>
+</div>
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="paragraph">
+<p>ARP en PT simulatie:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je kent bedoeling van ARP; samengevat: hier is een IP adres, wie
+heeft dit adres en wat is jouw MAC-adres?</p>
+</li>
+<li>
+<p>je kan ARP frames laten zien in packet tracer simulatie</p>
+</li>
+<li>
+<p>je kan in packet tracer ook frames van andere protocollen zien (DTP,
+CDP, STP, ...)</p>
+</li>
+<li>
+<p>je kan in packet tracer filteren op protocol, en zo bijvoorbeeld
+alleen ARP en ICMP laten zien in de simulator; later gebruik je deze
+filters ook om andere protocollen te bekijken bij foutopsporing of
+gewoon om iets bij te leren</p>
+</li>
+<li>
+<p>je kan PC ARP tabel wissen om een nieuwe ARP te forceren</p>
+</li>
+<li>
+<p>je weet dat een ARP request om een onbekend MAC adres te vinden, een
+L2 broadcast pakket is</p>
+</li>
+<li>
+<p>je weet dat ook een router een ARP request zal sturen als hij een
+destination IP heeft maar het destination MAC nog niet kent
+(simuleer dit ook eens)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ICMP en PT simulatie:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je weet dat een ping eigenlijk pakketjes stuurt volgens het ICMP
+protocol, en dat dit echo request en echo replies zijn die dan heen
+en weer gestuurd worden</p>
+</li>
+<li>
+<p>je kan in packet tracer simulatie mode een ICMP echo request of
+reply bekijken, en zowel source/destination MAC adres als
+source/destination IP adres terugvinden; je vindt ook terug of een
+pakketje een request dan wel een reply is</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Tip in Packet tracer</strong>: gebruik de fast forward knop (dubbel pijl
+naast de reset knop) om de simulatie te versnellen; dit is onder andere
+handig om het opstartproces (boot) van switch of router te versnellen,
+als je een tikfout gemaakt hebt en packet tracer name lookup start
+("Translating ...").</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_ethernet_switching_life_of_a_packet">Ethernet switching / life of a packet</h3>
-
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je begrijpt dat een ethernet switch de data frames ongewijzigd
+doorstuurt</p>
+</li>
+<li>
+<p>je begrijpt dat een switch een soort "intelligente kabel" is: hij
+stuurt gewoon frames door, maar alleen naar de interfaces waar het
+frame moet zijn</p>
+</li>
+<li>
+<p>je snapt werking van switch op basis van de mac tabel, en je weet
+welke twee kolommen er in een mac tabel zitten</p>
+</li>
+<li>
+<p>je weet dat een switch dynamisch leert welke MAC adressen achter
+welke interface zitten</p>
+</li>
+<li>
+<p>je kan een switch MAC-tabel wissen, en je weet wat het gevolg
+hiervan is</p>
+</li>
+<li>
+<p>je kan in packet tracer volgende scenario&#8217;s uitlokken en bekijken in
+simulatie: (1) een switch stuurt een broadcast frame door naar alle
+interfaces, (2) een switch stuurt een unicast frame door naar alle
+interfaces, (3) een switch stuurt een unicast frame door naar 1
+interface (je zorgt er uiteraard voor dat je een switch hebt waar
+genoeg interfaces in gebruik zijn)</p>
+</li>
+<li>
+<p>je kan de huidige mac-tabel van een switch laten zien</p>
+</li>
+<li>
+<p>je snapt dat een L2 broadcast door een switch uiteraard wel naar
+alle interfaces wordt doorgestuurd</p>
+</li>
+<li>
+<p>je weet dat switchen (in principe) zelf geen MAC adres hebben</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Life of a packet:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je begrijpt nu grondig L2 en L3 adressen (aka MAC en IP adressen) ,
+en hoe ze samenhangen, en je begrijpt "life of a packet", de video
+van Jeremy&#8217;s IT, CCNA day 12.</p>
+</li>
+<li>
+<p>je hebt nu voldoende geleerd om in een topologie met meerdere
+routers en switches een ICMP pakketje volgen, en voorspellen welke
+source en destination L2 en L3 adressen er gebruikt worden op elk
+punt in de route</p>
+</li>
+<li>
+<p>met andere woorden: je kunt nu life of a packet toepassen in
+computernetwerken met vele switches en routers</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_ipv4_subnetting">IPv4 subnetting</h3>
-
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je snapt dat de hele "ruimte" van alle bruikbare IPv4 adressen
+opgedeeld kan worden in subnetten, en dat een subnet zelf verder
+opgedeeld kan worden in kleiner subnetten</p>
+</li>
+<li>
+<p>je kent de afkortingen FLSM (fixed length subnet mask) en VLSM
+(variable length subnet mask); je kan zelf subnetten berekenen,
+zowel in gelijke grootte als verschillende grootte</p>
+</li>
+<li>
+<p>je snapt dat bij het indelen in subnetten er bruikbare IPv4 adressen
+verloren gaan (meer netwerkadressen en broadcastadressen)</p>
+</li>
+<li>
+<p>je kan zelf een willekeurig IPv4 netwerk (bvb. 10.11.0.0/16) indelen
+in subnetten aan de hand van het gegeven aantal hosts in de
+verschillende subnetten</p>
+</li>
+<li>
+<p>je snapt dat een bit meer of minder in een IPv4 netwerkdeel de
+grootte van het netwerk halveert of verdubbelt; bijvoorbeeld een /30
+netwerk heeft 4 adressen (waarvan 2 hostadressen), een /29 netwerk
+heeft 8 adressen (waarvan 6 hostadressen), een /28 heeft 16 adressen
+enzovoort.</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_ipv6">IPv6</h3>
-
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="paragraph">
+<p>Kennis IPv6:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je weet dat een IPv6 adres 128 bits lang is (4x lengte van IPv4
+adres)</p>
+</li>
+<li>
+<p>je kent twee notaties: de volledige (hexadecimale) notatie, en de
+verkorte notatie; je kan de ene in de andere omzetten</p>
+</li>
+<li>
+<p>je kan de hexadecimale notaties omzetten naar binaire notaties, en
+omgekeerd</p>
+</li>
+<li>
+<p>je kent volgende gelijkenissen tussen IPv6 en IPv4:</p>
+</li>
+<li>
+<p>eveneens opdeling in netwerkdeel en hostdeel (heel vaak 64+64
+bits)</p>
+</li>
+<li>
+<p>je kent volgende verschillen tussen IPv6 en IPv4:</p>
+</li>
+<li>
+<p>soms is netwerkdeel van een IPv6 adres nog eens opgesplitst in
+een global routing prefix (48 bits) en een subnet ID (16 bits)</p>
+</li>
+<li>
+<p>een interface met IPv6 krijgt meestal 2 adressen: een link-local
+adres (LLA) en een global unicast adres (GUA)</p>
+</li>
+<li>
+<p>je herkent een LLA</p>
+</li>
+<li>
+<p>je weet dat een LLA vaak automatisch wordt toegekend, en hierbij
+afgeleid wordt van het MAC adres (volgens een standaard of principe
+genaamd EUI-64), zodat het uniek is (omdat MAC adressen in principe
+uniek zijn)</p>
+</li>
+<li>
+<p>je weet dat een LLA niet gerouteerd wordt (door geen enkele router)</p>
+</li>
+<li>
+<p>je weet dat een GUA wereldwijd uniek is, wel gerouteerd wordt, en
+dus bedoeld is om over het internet te communiceren</p>
+</li>
+<li>
+<p>je kan subnetten maken in IPv6</p>
+</li>
+<li>
+<p>je weet dat IPv4 en IPv6 samen/door mekaar gebruikt kunnen worden</p>
+</li>
+<li>
+<p>je weet dat ICMPv6 ook een echo request/response heeft, je kan dus
+ook pingen met IPv6</p>
+</li>
+<li>
+<p>je weet dat IPv6 eveneens op L3 in het OSI model zit; het is gewoon
+een andere manier om laag 3 te implementeren; de laag eronder blijft
+dezelfde (Ethernet MAC adressen) ; ARP bestaat echter niet voor IPv6
+(zie verder)</p>
+</li>
+<li>
+<p>je weet dat er voor IPv6 is er geen ARP protocol, maar wel een
+Network Discovery Protocol (ND of NDP) met gelijkaardige functie</p>
+</li>
+<li>
+<p>je weet dat de het ND protocol meerdere types berichten heeft,
+waaronder Neighbour Solicitation en Neighbour Advertisement (NS en
+NA) ; (zie verder voor een paar andere types ND berichten)</p>
+</li>
+<li>
+<p>je weet dat NS en NA in IPv6 voor hetzelfde gebruikt kunnen worden
+als ARP voor IPv4</p>
+</li>
+<li>
+<p>je weet dat het ND protocol een L3 protocol is, terwijl ARP een L2
+protocol is; je ziet dus dat een gelijkaardig functie (namelijk het
+vinden van het MAC adres van een host waarvan je het IP adres kent)
+bij IPv6 in een hogere protocollaag zit dan bij IPv4</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Packet tracer met IPv6:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je weet dat IPv6 in een router eerst moet aangezet worden</p>
+</li>
+<li>
+<p>je kan alle IPv4 packet tracer configuratie-oefeningen nu ook met
+IPv6 maken:</p>
+</li>
+<li>
+<p>hosts configureren (met LLA en GUA)</p>
+</li>
+<li>
+<p>router interfaces configureren (best ook met LLA en GUA)</p>
+</li>
+<li>
+<p>statische routes toevoegen aan routers (alleen GUA)</p>
+</li>
+<li>
+<p>(tip: neem al je gemaakte en bewaarde IPv4 oefeningen, en voeg er
+IPv6 aan toe)</p>
+</li>
+<li>
+<p>je kan pingen met IPv6 adressen, host naar host, of host naar router
+interface</p>
+</li>
+<li>
+<p>je gebruikt ook eens een LLA op de routers/gateway met waarde fe80:: en
+je test uit dat je elke router interface hetzelfde LLA adres fe80:: kan geven
+omdat het LLA alleen binnen het L2 broadcast domein    uniek moet zijn</p>
+</li>
+<li>
+<p>je kan NS en NA berichten zien in packet tracer waarbij een host het
+MAC adres vraagt van een IPv6 host in zijn broadcast domein</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Eigen computer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>heb je op je eigen computer een IPv6 adres?</p>
+</li>
+<li>
+<p>zie je IPv6 communicatie in wireshark?</p>
+</li>
+<li>
+<p>vind je IPv6 adressen voor servers op het internet? wat geeft "ping
+www.google.be op je computer? het IPv4 of
+het IPv6 adres?</p>
+</li>
+<li>
+<p>kan je jouw default gateway pingen met ICMPv6?</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_osi_vervolg_tcpudp_client_server_dns">OSI vervolg, TCP/UDP, client-server, DNS/&#8230;&#8203;</h3>
-
+<div class="paragraph">
+<p>We hebben het al gehad over lagen 1, 2 en 3 in het OSI model. Je kent de
+namen toch nog? We kijken nu naar de overige lagen.</p>
+</div>
+<div class="paragraph">
+<p>Je bent klaar met deze stap wanneer je het volgende kent of kan:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je weet dat het OSI netwerkmodel 7 protocollagen beschrijft, maar
+dat in de praktijk de 3 hoogste lagen worden samengenomen, en dat
+ook de twee onderste lagen bij Ethernet eigenlijk samen in 1
+standaard zitten, waarbij er toch wel een duidelijk verschil is
+tussen de fysieke lagen van Ethernet fiber en Ethernet copper</p>
+</li>
+<li>
+<p>je weet dat de netwerken die wij bestuderen de TCP/IP protocolstack
+gebruiken, en dat TCP een L4 protocol is (transportlaag), en IP een
+L3 procotol is (netwerklaag)</p>
+</li>
+<li>
+<p>je weet dat nog een tweede laag 4 protocol is dat vaak gebruikt
+wordt: UDP</p>
+</li>
+<li>
+<p>je weet waarvoor de afkortingen UDP en TCP staan</p>
+</li>
+<li>
+<p>je begrijpt het dubbele idee achter een gelaagd model:</p>
+</li>
+<li>
+<p>enerzijds: een <strong>zender</strong> van data gaat de data <strong>van boven naar
+onder</strong> in de protocollagen doorsturen, waarna het over een
+fysiek medium naar de ontvanger wordt gestuurd, en bij de
+<strong>ontvanger</strong> gaat <strong>het van onder naar boven</strong> terug tot bij de     applicatie (encapsulatie/decapsulatie)</p>
+</li>
+<li>
+<p>anderzijds: een applicatie op de ene computer communiceert
+eigenlijk met een applicatie op de andere computer, alsof al die
+onderliggen lagen niet bestaan; de applicatie aan de ene kant
+hoeft de details van het netwerkmodel niet te weten om te kunnen
+praten met de applicatie aan de andere kant</p>
+</li>
+<li>
+<p>je kent het "client-server" model, je kan het verschil tussen client
+en server uitleggen</p>
+</li>
+<li>
+<p>je weet dat UDP "connectionless" is, terwijl TCP een "connection"
+protocol is</p>
+</li>
+<li>
+<p>je weet dat het opzetten van een TCP connectie in 3 stappen gebeurt</p>
+</li>
+<li>
+<p>je ziet het verband tussen client-server op applicatieniveau en
+TCP-protocol (met name: de server zit te wachten, het is de client
+de het initiatief neemt en TCP opstart)</p>
+</li>
+<li>
+<p>je kent volgende gelijkenis tussen UDP en TCP: beide gebruiken
+poortnummers; je begrijpt waarom poortnummers nodig/nuttig zijn; je
+snapt dat er "source" en "destination" poorten zijn</p>
+</li>
+<li>
+<p>je weet dat UDP bijna niks toevoegt bovenop IP, maar dat TCP wel
+heel wat functionaliteit toevoegt bovenop IP:</p>
+</li>
+<li>
+<p>TCP biedt betrouwbare communicatie, zelfs al gaan er pakketjes
+verloren</p>
+</li>
+<li>
+<p>TCP doet dit door bij te houden welke pakketjes goed zijn
+aangekomen, volgnummers te gebruiken, en te vragen om een pakket
+opnieuw te sturen als de ontvanger merkt dat er iets ontbreekt</p>
+</li>
+<li>
+<p>je weet dat op L4 niveau de eenheid van data een "segment" wordt
+genoemd, een TCP segment dus, op L3 niveau spreken we van pakketten
+(IP pakket dus), en op L2 niveau van een frame (een ethernet frame
+dus)</p>
+</li>
+<li>
+<p>je kent een aantal applicatieprotocollen (die bijgevolg gebruikmaken
+van L4): DNS, SSH, DHCP en weet waarvoor die dienen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Praktijk: in een wireshark "capture" kan je:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>de L4 gebruikte poortnummers terugvinden</p>
+</li>
+<li>
+<p>een TCP connectie volgen</p>
+</li>
+<li>
+<p>applicatieprotocollen terugvinden (DNS, DHCP, HTTP, HTTPS, ...)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Wat je niet moet kennen/kunnen voor deze stap:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>je hoeft de betekenis van OSI lagen presentatie (L6) en sessie (L5)
+niet te kennen</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_ipv4_dynamische_adressering_dhcp">IPv4 dynamische adressering (DHCP)</h3>
@@ -1244,7 +1846,7 @@ bestemming is? Dit gaan we later zien.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-10-03 11:00:24 UTC
+Last updated 2025-10-03 12:04:56 UTC
 </div>
 </div>
 </body>
