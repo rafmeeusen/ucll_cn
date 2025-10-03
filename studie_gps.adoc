@@ -576,12 +576,12 @@ Kennis IPv6:
 - je kan de hexadecimale notaties omzetten naar binaire notaties, en
     omgekeerd
 - je kent volgende gelijkenissen tussen IPv6 en IPv4:
-    - eveneens opdeling in netwerkdeel en hostdeel (heel vaak 64+64
+    * eveneens opdeling in netwerkdeel en hostdeel (heel vaak 64+64
         bits)
 - je kent volgende verschillen tussen IPv6 en IPv4:
-  - soms is netwerkdeel van een IPv6 adres nog eens opgesplitst in
+  * soms is netwerkdeel van een IPv6 adres nog eens opgesplitst in
         een global routing prefix (48 bits) en een subnet ID (16 bits)
-  - een interface met IPv6 krijgt meestal 2 adressen: een link-local
+  * een interface met IPv6 krijgt meestal 2 adressen: een link-local
         adres (LLA) en een global unicast adres (GUA)
 - je herkent een LLA
 - je weet dat een LLA vaak automatisch wordt toegekend, en hierbij
@@ -616,9 +616,9 @@ Packet tracer met IPv6:
 - je weet dat IPv6 in een router eerst moet aangezet worden
 - je kan alle IPv4 packet tracer configuratie-oefeningen nu ook met
     IPv6 maken:
-    - hosts configureren (met LLA en GUA)
-    - router interfaces configureren (best ook met LLA en GUA)
-    - statische routes toevoegen aan routers (alleen GUA)
+    * hosts configureren (met LLA en GUA)
+    * router interfaces configureren (best ook met LLA en GUA)
+    * statische routes toevoegen aan routers (alleen GUA)
 - (tip: neem al je gemaakte en bewaarde IPv4 oefeningen, en voeg er
     IPv6 aan toe)
 - je kan pingen met IPv6 adressen, host naar host, of host naar router
@@ -657,11 +657,11 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
     wordt: UDP
 - je weet waarvoor de afkortingen UDP en TCP staan
 - je begrijpt het dubbele idee achter een gelaagd model:
-  - enerzijds: een **zender** van data gaat de data **van boven naar
+  * enerzijds: een **zender** van data gaat de data **van boven naar
     onder** in de protocollagen doorsturen, waarna het over een
     fysiek medium naar de ontvanger wordt gestuurd, en bij de
     **ontvanger** gaat **het van onder naar boven** terug tot bij de     applicatie (encapsulatie/decapsulatie)
-  - anderzijds: een applicatie op de ene computer communiceert
+  * anderzijds: een applicatie op de ene computer communiceert
     eigenlijk met een applicatie op de andere computer, alsof al die
     onderliggen lagen niet bestaan; de applicatie aan de ene kant
     hoeft de details van het netwerkmodel niet te weten om te kunnen
@@ -679,13 +679,11 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
     snapt dat er "source" en "destination" poorten zijn
 - je weet dat UDP bijna niks toevoegt bovenop IP, maar dat TCP wel
     heel wat functionaliteit toevoegt bovenop IP:
-
-    - TCP biedt betrouwbare communicatie, zelfs al gaan er pakketjes
+    * TCP biedt betrouwbare communicatie, zelfs al gaan er pakketjes
         verloren
-    - TCP doet dit door bij te houden welke pakketjes goed zijn
+    * TCP doet dit door bij te houden welke pakketjes goed zijn
         aangekomen, volgnummers te gebruiken, en te vragen om een pakket
         opnieuw te sturen als de ontvanger merkt dat er iets ontbreekt
-
 - je weet dat op L4 niveau de eenheid van data een "segment" wordt
     genoemd, een TCP segment dus, op L3 niveau spreken we van pakketten
     (IP pakket dus), en op L2 niveau van een frame (een ethernet frame
@@ -695,9 +693,9 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
 Praktijk: in een wireshark "capture" kan je:
 
-  - de L4 gebruikte poortnummers terugvinden 
-  - een TCP connectie volgen
-  - applicatieprotocollen terugvinden (DNS, DHCP, HTTP, HTTPS, \...)
+- de L4 gebruikte poortnummers terugvinden 
+- een TCP connectie volgen
+- applicatieprotocollen terugvinden (DNS, DHCP, HTTP, HTTPS, \...)
 
 Wat je niet moet kennen/kunnen voor deze stap:
 
@@ -848,19 +846,19 @@ Een paar links (helaas met veel reclame):
 Wat er typisch in een -router zit:
 
 - meestal een combinatie van
-    - een "modem" of iets dergelijks; intern in jouw huis heb je
+    * een "modem" of iets dergelijks; intern in jouw huis heb je
         ethernet of Wifi, naar buiten toe zal het misschien een oude
         technologie zijn zoals de coaxkabel van de TV distributie, of de
         telefoonkabel van de vroegere analoge telefoon waar nu VDSL
         modulatie op gebruikt wordt; dit moet dus geconverteerd worden
-    - een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
+    * een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
         netwerk is dan het netwerk van jouw provider)
-    - een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
+    * een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
         gebruikt voor al jouw toestellen thuis)
-    - een switch (om meer dan 1 poort/interface in jouw thuisnetwerk
+    * een switch (om meer dan 1 poort/interface in jouw thuisnetwerk
         te hebben)
-    - een access point (om draadloos toegang te hebben)
-    - de switch laat toe dat je meerdere apparaten
+    * een access point (om draadloos toegang te hebben)
+    * de switch laat toe dat je meerdere apparaten
 
 ## Deel 2: technologieën in een bedrijfsnetwerk
 
