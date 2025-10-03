@@ -579,9 +579,9 @@ Kennis IPv6:
     - eveneens opdeling in netwerkdeel en hostdeel (heel vaak 64+64
         bits)
 - je kent volgende verschillen tussen IPv6 en IPv4:
-    - soms is netwerkdeel van een IPv6 adres nog eens opgesplitst in
+  - soms is netwerkdeel van een IPv6 adres nog eens opgesplitst in
         een global routing prefix (48 bits) en een subnet ID (16 bits)
-    - een interface met IPv6 krijgt meestal 2 adressen: een link-local
+  - een interface met IPv6 krijgt meestal 2 adressen: een link-local
         adres (LLA) en een global unicast adres (GUA)
 - je herkent een LLA
 - je weet dat een LLA vaak automatisch wordt toegekend, en hierbij
