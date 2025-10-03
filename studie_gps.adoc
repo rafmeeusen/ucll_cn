@@ -79,6 +79,63 @@ commando's die je waarschijnlijk nodig hebt:
 - Mac Terminal: $ ifconfig
 - Linux terminal: $ ip address
 
+Je bent klaar met deze stap wanneer je het volgende kent of kan:
+
+. in packet tracer:
+    - in een lege packet tracer een aantal switches, routers en PC's
+        tekenen en verbinden (met automatische connectie-kabel), en ook
+        terug verwijderen ; ook al begrijp je nog niet wat deze
+        apparaten doen, je zou wel een gegeven topologie kunnen nabouwen
+        in packet tracer (doe dit eventueel eens; neem een
+        voorbeeldexamen en bouw het na)
+    - "options/preferences" gebruiken om de labels van interfaces of
+        apparaatnamen aan- en uit te zetten
+    - bestanden (.pkt) opslaan, en terug openen
+    - labo bestanden van Jeremy's IT Lab en Cisco Netacad openen
+    - de CLI (command line interface) van een switch en router openen
+        om toegang te krijgen tot IOS
+
+. in Cisco IOS:
+
+    - ken je een aantal verschillende modes, en herken je hun
+        verschillende prompts (o.a. privileged exec mode, global config
+        mode)
+    - je begrijpt dat verschillende modes toegang geven tot
+        verschillende commando's
+    - je kent de CLI hulpmiddelen ? en TAB om mogelijk commando's te
+        zien of aan te vullen
+    - je kent al de commando's "enable", "configure terminal", en
+        "exit" om tussen de modes te navigeren in IOS
+    - je weet dat je commando's kunt afkorten als de afkorting
+        eenduidig is (bvb. \# conf t), en je kan zo tikwerk besparen
+
+. in wireshark:
+
+    - je kan een dump maken van het netwerkverkeer op je
+        computer/laptop
+    - zie je de verschillende pakketjes (lijn per lijn), met een
+        timestamp, en kan je de details van elk pakketje bekijken
+    - je weet dat de informatie in de pakketjes digitaal wordt
+        voorgesteld, dus ook de nuttige inhoud (video, document, \...)
+        is digitaal
+    - je kent de term "packet switched network", en hebt deze
+        "packets" in wireshark gezien
+
+. op je computer:
+    - je weet dat er meestal meerdere netwerkinterfaces op je computer
+        zijn
+    - je begrijpt dat elke netwerkinterface zijn eigen IP adres heeft
+        (of meerdere per interface)
+    - zonder de details te begrijpen, weet je dat IPv6 een recentere
+        variant is van het IP protocol dan IPv4, en dat momenteel heel
+        veel netwerken beide versies tegelijk ondersteunen
+    - je weet welke netwerk interface op jouw computer diegene is
+        waarlangs je met het Internet communiceert
+    - je weet via welk IPv4 adres je met het internet communiceert
+    - je vindt ook het IPv6 adres terug van deze netwerkinterface (als
+        je dat hebt)
+
+
 ### Eén IPv4 netwerk
 
 ### IPv4 adressen
