@@ -1,4 +1,5 @@
 # Computernetwerken Studie-GPS
+:toc-title: Inhoud
 :toc:
 :toclevels: 3
 
