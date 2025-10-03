@@ -75,9 +75,9 @@ Als laatste zoek je uit hoe je het IPv4 adres van je computer kan
 terugvinden via CLI, en je probeert dit uit. Hieronder alvast de
 commando's die je waarschijnlijk nodig hebt:
 
-- Windows: \$ ipconfig
-- Mac Terminal: \$ ifconfig
-- Linux terminal: \$ ip address
+- Windows: $ ipconfig
+- Mac Terminal: $ ifconfig
+- Linux terminal: $ ip address
 
 ### Eén IPv4 netwerk
 
