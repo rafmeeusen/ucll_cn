@@ -47,6 +47,38 @@ van een leeg blad begint te tekenen.
 
 ### Voorbereiding (packet tracer/wireshark)
 
+. zorg dat je toegang hebt tot Cisco netacad (zie Toledo)
+. installeer Cisco Packet Tracer op je computer (zie Toledo)
+. installeer Wireshark op je computer (zie Toledo)
+
+Zorg nu dat je in Packet Tracer een paar basisvaardigheden opdoet, als
+eerste kennismaking. Wat hierbij kan helpen:
+
+- Jeremy's "Packet Tracer Introduction \| Day 1 Lab"
+  (<https://www.youtube.com/watch?v=a1Im6GYaSno>)
+- Netacad CCNA-1 submodule 2.3.7 Packet Tracer - Navigate the IOS
+- experimenteer zelf wat, teken eens een netwerk vertrekkende van een
+  leeg blad in packet tracer, kijk wat rond in packet tracer
+
+Zorg daarna dat je in Wireshark een "capture" kan doen van het
+netwerkverkeer op je computer:
+
+- open wireshark, en selecteer de interface waarmee je op het internet
+    geconnecteerd bent
+- laat een aantal pakketten binnenkomen in Wireshark, en stop dan
+    (rode stopknop)
+- je klikt op een paar pakketten, en je kijkt alvast eens naar de
+    informatie die je erin vindt; zie je ergens TCP (Tranmission Control
+    Protocol) staan? zie je andere protocolnamen?
+
+Als laatste zoek je uit hoe je het IPv4 adres van je computer kan
+terugvinden via CLI, en je probeert dit uit. Hieronder alvast de
+commando's die je waarschijnlijk nodig hebt:
+
+- Windows: \$ ipconfig
+- Mac Terminal: \$ ifconfig
+- Linux terminal: \$ ip address
+
 ### Eén IPv4 netwerk
 
 ### IPv4 adressen
