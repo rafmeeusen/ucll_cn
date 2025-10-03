@@ -6,14 +6,38 @@
 ## Inleiding
 
 ### Doel
+Deze studie-GPS heeft als doel:
+- Een alternatieve volgorde aanbieden om de leerstof te     studeren/herhalen (andere volgorde dan Jeremy's IT Labs, andere     volgorde dan Cisco Netacad CCNA)
+- Checklists om je te helpen nagaan of je klaar bent met een onderdeel
+- Toelichten hoe gedetailleerd je een onderwerp moet kennen
+- Extra aandacht geven aan foutopsporing
+- Je aanmoedigen om soms bewust iets verkeerd te configureren en dan
+    na te gaan of het effectief misloopt waar jij het verwacht
 
 ### Indeling
+Deze studie-GPS is ingedeeld in twee delen:
+- Eerst leer je voldoende om de werking van een typisch thuisnetwerk    te begrijpen
+- Daarna leer je netwerktechnologie die je meestal niet in een     thuisnetwerk tegenkomt, maar wel in het netwerk van een school of     een bedrijf
+In deze cursus behandelen we geen draadloze netwerken. Hoewel draadloze netwerken overal voorkomen, blijft alles wat we leren relevant, ook voor netwerken met draadloze eindapparatuur.
 
 ### Methode
+Deze studie-GPS geeft vooral een volgorde, en helpt jezelf te evalueren.
+Je moet wel zelf actief op zoek gaan in het cursusmateriaal om elk
+onderwerp goed te beheersen. Aan het einde van elke stap staat een
+lijstje van verwachte kennis en vaardigheden die je zou moeten bereiken
+in die stap.
 
 ### Oproep voor feedback
+Deze studie-GPS is recent en nog in opbouw. Feedback over het nut ervan
+is zeer welkom. Vind je deze alternatieve volgorde nuttig, of geef je
+toch de voorkeur aan Netacad of Jeremy's IT Labs? Wat vind je er goed
+aan? Wat vind je niet goed? Staan er fouten in? Ontbreekt er een stuk?
+Feedback is welkom bij je coach voor Computer Networks.
 
 ### Tip
+Bewaar al je packet tracer oefeningen, vooral de oefeningen waar je zelf
+van een leeg blad begint te tekenen.
+
 
 ## Deel 1: Je netwerk thuis begrijpen
 
