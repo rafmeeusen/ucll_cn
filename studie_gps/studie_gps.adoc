@@ -223,6 +223,7 @@ Wat je niet moet kennen/kunnen voor deze stap:
     netwerkapparaten (gewoon weten dat het kan/bestaat, maar automatisch
     gebeurt in moderne apparaten)
 
+Hier nog een voorbeeld van een computernetwerk dat je in deze stap kan bouwen: 
 
 .Voorbeeldnetwerk om in deze stap te bouwen 
 image::studie_gps_fig_switched_network.png[]
