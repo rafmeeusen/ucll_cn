@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir -p publish
           asciidoctor -o publish/studie_gps.html studie_gps.adoc
+          cp publish/studie_gps.html  publish/index.html
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
