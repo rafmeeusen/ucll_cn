@@ -850,19 +850,19 @@ Een paar links (helaas met veel reclame):
 
 Wat er typisch in een home-router zit, is een combinatie van: 
 
-  * een "modem" of iets dergelijks; intern in jouw huis heb je
-        ethernet of Wifi, naar buiten toe zal het misschien een oude
+  * Een "modem" of iets dergelijks. Intern in jouw huis gebruik je
+        ethernet en Wifi, naar buiten toe zal het misschien een andere
         technologie zijn zoals de coaxkabel van de TV distributie, of de
-        telefoonkabel van de vroegere analoge telefoon waar nu VDSL
-        modulatie op gebruikt wordt; dit moet dus geconverteerd worden
-  * een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
+        telefoonkabel van de vroegere analoge telefoon waar VDSL
+        modulatie op gebruikt wordt; dit moet dus "geconverteerd" worden naar Ethernet/Wifi. 
+  * Een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
         netwerk is dan het netwerk van jouw provider)
-  * een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
+  * Een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
         gebruikt voor al jouw toestellen thuis)
-  * een switch (om meer dan 1 poort/interface in jouw thuisnetwerk
-        te hebben)
-  * een access point (om draadloos toegang te hebben)
-  * de switch laat toe dat je meerdere apparaten
+  * Een switch: om meer dan 1 poort/interface in jouw thuisnetwerk
+        te hebben, dus om meer dan 1 Ethernet apparaat aan jouw home-router te kunnen hangen
+  * Een access point om draadloos toegang te hebben. Een access point is sowieso bedoeld 
+    om meerdere apparaten te laten connecteren. 
 
 
 ## Deel 2: technologieën in een bedrijfsnetwerk
