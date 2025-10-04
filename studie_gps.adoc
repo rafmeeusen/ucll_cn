@@ -843,8 +843,8 @@ te voeren:
 
 Een paar links (helaas met veel reclame):
 
-- <https://whatismyipaddress.com/>
-- <https://www.showmyip.com/>
+- https://whatismyipaddress.com/[https://whatismyipaddress.com/, window=_blank]
+- https://www.showmyip.com/[https://www.showmyip.com/, window=_blank]
 
 Wat er typisch in een -router zit:
 
