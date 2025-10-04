@@ -639,7 +639,7 @@ Eigen computer:
 - heb je op je eigen computer een IPv6 adres?
 - zie je IPv6 communicatie in wireshark?
 - vind je IPv6 adressen voor servers op het internet? wat geeft "ping
-    www.google.be op je computer? het IPv4 of
+    www.google.be" op je computer? het IPv4 of
     het IPv6 adres?
 - kan je jouw default gateway pingen met ICMPv6?
 
