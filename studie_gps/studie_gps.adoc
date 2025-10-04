@@ -4,6 +4,7 @@
 :toclevels: 3
 :figure-caption: Figuur
 :sectnums:
+:imagesdir: images/
 
 ## Inleiding
 
