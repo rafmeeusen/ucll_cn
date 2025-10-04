@@ -31,9 +31,10 @@ jobs:
 
       - name: Convert .adoc to HTML
         run: |
-          mkdir -p publish
-          asciidoctor -o publish/studie_gps.html studie_gps.adoc
+          mkdir -p publish/images
+          asciidoctor -o publish/studie_gps.html studiegps/studie_gps.adoc
           cp publish/studie_gps.html  publish/index.html
+          cp -r studiegps/images/*  publish/images
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
