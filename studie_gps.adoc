@@ -59,7 +59,7 @@ Zorg nu dat je in Packet Tracer een paar basisvaardigheden opdoet, als
 eerste kennismaking. Wat hierbij kan helpen:
 
 - Jeremy's "Packet Tracer Introduction | Day 1 Lab"
-  (<https://www.youtube.com/watch?v=a1Im6GYaSno>)
+  (https://www.youtube.com/watch?v=a1Im6GYaSno[https://www.youtube.com/watch?v=a1Im6GYaSno, window=_blank])
 - Netacad CCNA-1 submodule 2.3.7 Packet Tracer - Navigate the IOS
 - experimenteer zelf wat, teken eens een netwerk vertrekkende van een
   leeg blad in packet tracer, kijk wat rond in packet tracer
