@@ -848,22 +848,22 @@ Een paar links (helaas met veel reclame):
 - https://whatismyipaddress.com/[https://whatismyipaddress.com/, window=_blank]
 - https://www.showmyip.com/[https://www.showmyip.com/, window=_blank]
 
-Wat er typisch in een -router zit:
+Wat er typisch in een home-router zit, is een combinatie van: 
 
-- meestal een combinatie van
-    * een "modem" of iets dergelijks; intern in jouw huis heb je
+  * een "modem" of iets dergelijks; intern in jouw huis heb je
         ethernet of Wifi, naar buiten toe zal het misschien een oude
         technologie zijn zoals de coaxkabel van de TV distributie, of de
         telefoonkabel van de vroegere analoge telefoon waar nu VDSL
         modulatie op gebruikt wordt; dit moet dus geconverteerd worden
-    * een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
+  * een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
         netwerk is dan het netwerk van jouw provider)
-    * een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
+  * een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
         gebruikt voor al jouw toestellen thuis)
-    * een switch (om meer dan 1 poort/interface in jouw thuisnetwerk
+  * een switch (om meer dan 1 poort/interface in jouw thuisnetwerk
         te hebben)
-    * een access point (om draadloos toegang te hebben)
-    * de switch laat toe dat je meerdere apparaten
+  * een access point (om draadloos toegang te hebben)
+  * de switch laat toe dat je meerdere apparaten
+
 
 ## Deel 2: technologieën in een bedrijfsnetwerk
 
