@@ -21,9 +21,11 @@ Deze studie-GPS heeft als doel:
 ### Indeling
 Deze studie-GPS is ingedeeld in twee delen:
 
-- Eerst leer je voldoende om de werking van een typisch thuisnetwerk    te begrijpen
-- Daarna leer je netwerktechnologie die je meestal niet in een     thuisnetwerk tegenkomt, maar wel in het netwerk van een school of     
-  een bedrijf
+- Eerst leer je voldoende om de werking van een typisch thuisnetwerk    
+  te begrijpen
+- Daarna leer je netwerktechnologie die je meestal niet in een     
+  thuisnetwerk tegenkomt, maar wel in het netwerk van een school of een bedrijf
+
 In deze cursus behandelen we geen draadloze netwerken. Hoewel draadloze netwerken overal voorkomen, blijft alles wat we leren relevant, ook voor netwerken met draadloze eindapparatuur.
 
 ### Methode
