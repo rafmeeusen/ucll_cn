@@ -643,7 +643,7 @@ Eigen computer:
     het IPv6 adres?
 - kan je jouw default gateway pingen met ICMPv6?
 
-### OSI vervolg, TCP/UDP, client-server, DNS/...
+### OSI vervolg, TCP/UDP, client-server, DNS, ...
 
 We hebben het al gehad over lagen 1, 2 en 3 in het OSI model. Je kent de
 namen toch nog? We kijken nu naar de overige lagen.
