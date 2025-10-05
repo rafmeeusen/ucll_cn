@@ -867,7 +867,7 @@ Wat er typisch in een home-router zit, is een combinatie van:
 
 ## Deel 2: technologieën in een bedrijfsnetwerk
 
-TODO. Alleen de titels van de stappen zijn al aangemaakt.
+Dit deel moet nog geschreven worden. Alleen de titels van de stappen zijn al aangemaakt.
 
 ### SVI en loopback
 
