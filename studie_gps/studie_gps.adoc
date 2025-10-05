@@ -12,7 +12,7 @@
 Deze studie-GPS heeft als doel:
 
 - Een alternatieve volgorde aanbieden om de leerstof te     
-  studeren/herhalen (andere volgorde dan Jeremy's IT Labs, andere     volgorde dan Cisco Netacad CCNA)
+  studeren/herhalen (andere volgorde dan Jeremy's IT Labs, andere     volgorde dan Cisco NetAcad CCNA)
 - Checklists om je te helpen nagaan of je klaar bent met een onderdeel
 - Toelichten hoe gedetailleerd je een onderwerp moet kennen
 - Extra aandacht geven aan foutopsporing
@@ -39,20 +39,20 @@ in die stap.
 ### Oproep voor feedback
 Deze studie-GPS is recent en nog in opbouw. Feedback over het nut ervan
 is zeer welkom. Vind je deze alternatieve volgorde nuttig, of geef je
-toch de voorkeur aan Netacad of Jeremy's IT Labs? Wat vind je er goed
+toch de voorkeur aan NetAcad of Jeremy's IT Labs? Wat vind je er goed
 aan? Wat vind je niet goed? Staan er fouten in? Ontbreekt er een stuk?
 Feedback is welkom bij je coach voor Computer Networks.
 
 ### Tip
-Bewaar al je packet tracer oefeningen, vooral de oefeningen waar je zelf
+Bewaar al je Packet Tracer oefeningen, vooral de oefeningen waar je zelf
 van een leeg blad begint te tekenen.
 
 
 ## Deel 1: Je netwerk thuis begrijpen
 
-### Voorbereiding (packet tracer/wireshark)
+### Voorbereiding (Packet Tracer/Wireshark)
 
-. zorg dat je toegang hebt tot Cisco netacad (zie Toledo)
+. zorg dat je toegang hebt tot Cisco NetAcad (zie Toledo)
 . installeer Cisco Packet Tracer op je computer (zie Toledo)
 . installeer Wireshark op je computer (zie Toledo)
 
@@ -61,9 +61,9 @@ eerste kennismaking. Wat hierbij kan helpen:
 
 - Jeremy's "Packet Tracer Introduction | Day 1 Lab"
   (https://www.youtube.com/watch?v=a1Im6GYaSno[https://www.youtube.com/watch?v=a1Im6GYaSno, window=_blank])
-- Netacad CCNA-1 submodule 2.3.7 Packet Tracer - Navigate the IOS
+- NetAcad CCNA-1 submodule 2.3.7 Packet Tracer - Navigate the IOS
 - experimenteer zelf wat, teken eens een netwerk vertrekkende van een
-  leeg blad in packet tracer, kijk wat rond in packet tracer
+  leeg blad in Packet Tracer, kijk wat rond in Packet Tracer
 
 Zorg daarna dat je in Wireshark een "capture" kan doen van het
 netwerkverkeer op je computer:
@@ -73,10 +73,10 @@ netwerkverkeer op je computer:
 - laat een aantal pakketten binnenkomen in Wireshark, en stop dan
     (rode stopknop)
 - je klikt op een paar pakketten, en je kijkt alvast eens naar de
-    informatie die je erin vindt; zie je ergens TCP (Tranmission Control
+    informatie die je erin vindt; zie je ergens TCP (Transmission Control
     Protocol) staan? zie je andere protocolnamen?
 
-Als laatste zoek je uit hoe je het IPv4 adres van je computer kan
+Als laatste zoek je uit hoe je het IPv4-adres van je computer kan
 terugvinden via CLI, en je probeert dit uit. Hieronder alvast de
 commando's die je waarschijnlijk nodig hebt:
 
@@ -86,17 +86,17 @@ commando's die je waarschijnlijk nodig hebt:
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
-. in packet tracer:
-    - in een lege packet tracer een aantal switches, routers en PC's
+. in Packet Tracer:
+    - in een lege Packet Tracer een aantal switches, routers en PC's
         tekenen en verbinden (met automatische connectie-kabel), en ook
         terug verwijderen ; ook al begrijp je nog niet wat deze
         apparaten doen, je zou wel een gegeven topologie kunnen nabouwen
-        in packet tracer (doe dit eventueel eens; neem een
+        in Packet Tracer (doe dit eventueel eens; neem een
         voorbeeldexamen en bouw het na)
     - "options/preferences" gebruiken om de labels van interfaces of
         apparaatnamen aan- en uit te zetten
-    - bestanden (.pkt) opslaan, en terug openen
-    - labo bestanden van Jeremy's IT Lab en Cisco Netacad openen
+    - bestanden (.pkt) opslaan en opnieuw openen
+    - labobestanden van Jeremy's IT Lab en Cisco NetAcad openen
     - de CLI (command line interface) van een switch en router openen
         om toegang te krijgen tot IOS
 
@@ -107,12 +107,12 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
         mode)
     - je begrijpt dat verschillende modes toegang geven tot
         verschillende commando's
-    - je kent de CLI hulpmiddelen ? en TAB om mogelijk commando's te
+    - je kent de CLI hulpmiddelen ? en TAB om mogelijke commando's te
         zien of aan te vullen
-    - je kent al de commando's "enable", "configure terminal", en
+    - je kent de commando's "enable", "configure terminal", en
         "exit" om tussen de modes te navigeren in IOS
     - je weet dat je commando's kunt afkorten als de afkorting
-        eenduidig is (bvb. \# conf t), en je kan zo tikwerk besparen
+        eenduidig is (bijvoorbeeld \# conf t), en je kan zo typwerk besparen
 
 . in wireshark:
 
@@ -129,15 +129,15 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
 . op je computer:
     - je weet dat er meestal meerdere netwerkinterfaces op je computer
         zijn
-    - je begrijpt dat elke netwerkinterface zijn eigen IP adres heeft
+    - je begrijpt dat elke netwerkinterface zijn eigen IP-adres heeft
         (of meerdere per interface)
     - zonder de details te begrijpen, weet je dat IPv6 een recentere
         variant is van het IP protocol dan IPv4, en dat momenteel heel
         veel netwerken beide versies tegelijk ondersteunen
     - je weet welke netwerk interface op jouw computer diegene is
         waarlangs je met het Internet communiceert
-    - je weet via welk IPv4 adres je met het internet communiceert
-    - je vindt ook het IPv6 adres terug van deze netwerkinterface (als
+    - je weet via welk IPv4-adres je met het internet communiceert
+    - je vindt ook het IPv6-adres terug van deze netwerkinterface (als
         je dat hebt)
 
 
@@ -145,19 +145,19 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
-Packet tracer bouwen/configureren:
+Packet Tracer bouwen/configureren:
 
-- je kan in packet tracer een netwerk bouwen met switches, ethernet
+- je kan in Packet Tracer een netwerk bouwen met switches, ethernet
     kabels, en "end devices" (PC / laptop / server) ; bijvoorbeeld zoals
     in de schermafbeelding hieronder, maar je kan dit voor eender welke
     combinatie van switches en eindapparaten
-- je kan in zo'n netwerk het IPv4 adres configureren van alle end
-    devices (bvb. adressen 192.168.10.1, 192.168.10.2, \... met masker
+- je kan in zo'n netwerk het IPv4-adres configureren van alle end
+    devices (bijvoorbeeld adressen 192.168.10.1, 192.168.10.2, \... met masker
     255.255.255.0)
 - je herkent de prefixen Eth/Fa/Gi voor benamingen van interfaces in
     Cisco apparatuur, en kent hun maximale bitrates
 - je weet dat er straight-through en crossover kabels bestaan, ook in
-    packet tracer simulatie; je weet dat dit in moderne apparatuur
+    Packet Tracer simulatie; je weet dat dit in moderne apparatuur
     automatisch wordt gedetecteerd en geen belangrijke rol meer speelt
     in de praktijk
 - je weet misschien nog niet hoe een switch juist werkt, maar je merkt
@@ -170,7 +170,7 @@ Packet tracer bouwen/configureren:
 - je kan in een switch CLI met een interface range ineens meerdere
     interfaces in shutdown zetten
 
-Packet tracer ping:
+Packet Tracer ping:
 
 - je kan vanop elk type eindapparaat (laptop, computer, server) een
     ping verzenden via de computer CLI (hint: Desktop / Command prompt)
@@ -180,11 +180,11 @@ Packet tracer ping:
     dan gezien dat het apparaat achter die interface niet meer
     bereikbaar is
 - je hebt al eens bewust een ping laten falen door een eindapparaat
-    met een compleet ander IPv4 adres te configureren (bvb. 10.10.10.10
+    met een compleet ander IPv4-adres te configureren (bijvoorbeeld 10.10.10.10
     met mask 255.255.0.0 terwijl alle andere apparaten 192.168.10.x als
-    IP adres hebben)
-- je begrijpt dat een IPv4 adres uniek moet zijn binnen het netwerk,
-    dus als er twee eindapparaten hetzelfde IPv4 adres hebben, dan gaat
+    IP-adres hebben)
+- je begrijpt dat een IPv4-adres uniek moet zijn binnen het netwerk,
+    dus als er twee eindapparaten hetzelfde IPv4-adres hebben, dan gaat
     het ergens mis (probeer dit gerust eens; wat gebeurt er? misschien
     begrijpt je verder in de cursus pas wat er exact misloopt\...)
 
@@ -204,18 +204,18 @@ Kennis:
 - je weet dat computernetwerken werken met data pakketjes: per keer
     wordt een bepaalde hoeveelheid informatie doorgestuurd, in kleine
     pakketjes
-- je weet in grote lijnen hoe een IPv4 adres eruit ziet, en dat daar
+- je weet in grote lijnen hoe een IPv4-adres eruit ziet, en dat daar
     voor een end device ook een netwerkmasker (Engels "subnet mask") bij
     hoort
 
 Eigen computer:
 
 - je kan met je eigen computer pingen naar een apparaat op het
-    internet aan de hand van het IP adres (bvb. ping 8.8.8.8)
+    internet aan de hand van het IP-adres (bijvoorbeeld ping 8.8.8.8)
 - je kan met je eigen computer pingen naar een server op basis van de
-    naam in plaats van het IP adres (bvb. ping www.ucll.be) ; zie je dat deze naam wordt
-    omgezet in een IP adres? is het een IPv4 adres of ziet het er
-    helemaal anders uit, en is het misschien eerder een IPv6 adres?
+    naam in plaats van het IP-adres (bijvoorbeeld ping www.ucll.be) ; zie je dat deze naam wordt
+    omgezet in een IP-adres? is het een IPv4-adres of ziet het er
+    helemaal anders uit, en is het misschien eerder een IPv6-adres?
 
 Wat je niet moet kennen/kunnen voor deze stap:
 
@@ -228,7 +228,7 @@ Hier nog een voorbeeld van een computernetwerk dat je in deze stap kan bouwen:
 .Voorbeeldnetwerk om in deze stap te bouwen 
 image::studie_gps_fig_switched_network.png[]
 
-### IPv4 adressen
+### IPv4-adressen
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
@@ -241,15 +241,15 @@ Talstelsels:
     op decimale en hexadecimale getallen; dat mag met een rekenmachine,
     maar je hebt ook het inzicht om dat desnoods met de hand te kunnen
 
-IPv4 adressen, basis
+IPv4-adressen, basis
 
-- je kent/herkent een geldig IPv4 adres in de "dotted decimal"
+- je kent/herkent een geldig IPv4-adres in de "dotted decimal"
     notatie, je weet dat het 32 bits lang is, dat er dus 8 bits zijn per
     decimaal getal
-- je weet dat een IPv4 adres een netwerkdeel en een hostdeel heeft
-- je kent volgende twee manieren om het netwerkdeel van een IPv4 adres
-    aan te geven: netwerkmasker notatie (bvb. 255.0.0.0), en de "slash"
-    notatie (bvb. /8)
+- je weet dat een IPv4-adres een netwerkdeel en een hostdeel heeft
+- je kent volgende twee manieren om het netwerkdeel van een IPv4-adres
+    aan te geven: netwerkmasker notatie (bijvoorbeeld 255.0.0.0), en de "slash"
+    notatie (bijvoorbeeld /8)
 - je kan een netwerkmasker converteren in een slash notatie en
     omgekeerd
 - je begrijpt dat er twee speciale adressen zijn, niet geschikt voor
@@ -258,16 +258,15 @@ IPv4 adressen, basis
     hostadres; je kent goed het onderscheid tussen een **hostadres** en
     een netwerkadres
 - je kent de betekenis van een "broadcast"
-- je kan nagaan of twee IPv4 adressen (met gegeven netwerkmasker) in
+- je kan nagaan of twee IPv4-adressen (met gegeven netwerkmasker) in
     hetzelfde netwerk zitten of niet
-- je kan voor een gegeven IPv4 netwerk uitrekenen hoeveel geldige host
-    adressen erin zitten (en je kan ze desnoods allemaal oplijsten)
+- je kan voor een gegeven IPv4 netwerk uitrekenen hoeveel geldige hostadressen 
+  erin zitten (en je kan ze desnoods allemaal oplijsten)
 - je kan zelf meerdere IPv4 netwerken bedenken die geen overlap hebben
 
-IPv4 adressen, types
+IPv4-adressen, types
 
-- je kent/herkent het verschil tussen publieke en "private" IPv4
-    adressen, je herkent 192.168.x.y als private, en ook 10.x.y.z ; je
+- je kent/herkent het verschil tussen publieke en "private" IPv4-adressen, je herkent 192.168.x.y als private, en ook 10.x.y.z ; je
     weet dat er nog andere private ranges of speciale adressen bestaan,
     en kan ze opzoeken
 - je weet dat op het Internet private adressen niet gebruikt worden
@@ -280,17 +279,17 @@ IPv4 adressen, types
 - je weet dat er behalve IPv4 unicast en broadcast, ook nog multicast
     bestaat, en snapt in grote lijnen waarvoor dit dient
 
-Packet tracer:
+Packet Tracer:
 
-- je kan in packet tracer aantonen dat een PC met IPv4 192.168.10.1/24
+- je kan in Packet Tracer aantonen dat een PC met IPv4 192.168.10.1/24
     en een PC met IPv4 192.168.11.1/24 niet met elkaar kunnen
     communiceren als er alleen switches en kabels gebruikt worden; en je
     snapt dat dit is omdat ze niet in hetzelfde IPv4 netwerk zitten
 
 Eigen computer:
 
-- je kan het IPv4 adres van je eigen laptop vinden
-- je kan het IPv4 adres van een http(s) server op het internet vinden
+- je kan het IPv4-adres van je eigen laptop vinden
+- je kan het IPv4-adres van een http(s) server op het internet vinden
 
 
 
@@ -303,7 +302,7 @@ netwerken met elkaar kunnen communiceren door een router toe te voegen.
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
-Packet tracer:
+Packet Tracer:
 
 - je kan twee netwerken zoals gezien/geoefend in de vorige stap aan
     elkaar koppelen met 1 router
@@ -317,14 +316,14 @@ Packet tracer:
 - je kan nu twee willekeurige netwerken met 1 router ertussen
     configureren zodanig dat alle apparaten elkaar kunnen pingen (router
     configureren en eindapparaten configureren)
-- je begrijpt dat je de router interface een willekeurig IPv4 adres in
+- je begrijpt dat je de router interface een willekeurig IPv4-adres in
     je netwerk kan geven, zolang die maar overeenkomt met de default
     gateway instellingen
 - je begrijpt dat routers net als eindapparaten gebruik maken van
     hostadressen (dus geen netwerkadres of zo)
 - je kan de IP configuratie van de interfaces van een Cisco router
     opvragen via de CLI
-- je kan packet tracer configuraties met 1 router en meerdere IPv4
+- je kan Packet Tracer configuraties met 1 router en meerdere IPv4
     netwerken troubleshooten
 - je kan via IOS CLI de **routing tabel** van een Cisco router laten
     zien
@@ -338,12 +337,12 @@ Kennis:
 
 - je weet dat een router verschillende netwerken verbindt met elkaar
 - je weet dat een router interface -- net als een PC of een server --
-    een IP adres heeft
+    een IP-adres heeft
 - je weet dat de netwerken van de eigen interfaces automatisch in de
     routing tabel worden toegevoegd, je hoeft deze routes niet zelf in
     de routing tabel toe te voegen
 - je begrijpt dat wij zelf moeten zorgen dat alle router interfaces en
-    eindapparaten achter deze router interface een IPv4 adres hebben dat
+    eindapparaten achter deze router interface een IPv4-adres hebben dat
     binnen hetzelfde netwerk ligt, en de router zelf de scheiding is
     tussen verschillende netwerken
 
@@ -368,7 +367,7 @@ image::studie_gps_fig_twee_routers.png[]
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
-Packet tracer:
+Packet Tracer:
 
 - je kan statische routes toevoegen aan een routing tabel van een
     router
@@ -380,21 +379,21 @@ Packet tracer:
     communiceren door statische routes toe te voegen
 - je kan een IPv4 default route toevoegen aan een Cisco router
 - je weet dat Cisco switches en routers soms **uitbreidingsslots**
-    hebben, en je kan in packet tracer extra interfaces toevoegen aan
+    hebben, en je kan in Packet Tracer extra interfaces toevoegen aan
     een switch of router; op die manier kan je extra Ethernet interfaces
     toevoegen, voor zowel copper of fiber, zowel SFP als andere
-- je kan in packet tracer Cisco netwerkapparaten verbinden met andere
+- je kan in Packet Tracer Cisco netwerkapparaten verbinden met andere
     types kabel dan Ethernet koper, zoals **seriële kabels** en
     **glasvezelkabels**
-- je kan nu ook een configuratie bouwen in packet tracer met 1 router
-    en 3 of 4 netwerken aan die ene router (gebruik bvb. router PT-empty
-    in packet tracer, en de uitbreidingsslots)
-- je kan het IPv4 adres van router interfaces pingen vanaf
+- je kan nu ook een configuratie bouwen in Packet Tracer met 1 router
+    en 3 of 4 netwerken aan die ene router (gebruik bijvoorbeeld router PT-empty
+    in Packet Tracer, en de uitbreidingsslots)
+- je kan het IPv4-adres van router interfaces pingen vanaf
     eindapparaten, en je begrijpt dat je op deze manier ook kan nagaan
     tot waar in het netwerk de routering werkt of vanaf waar routering
     niet meer werkt
 - je kan ook een ping versturen vanaf een router CLI naar eender welk
-    ander IP adres
+    ander IP-adres
 
 Kennis:
 
@@ -404,10 +403,10 @@ Kennis:
     tabel en destination IP gegeven hebt
 - je kent het concept "**default route**", je snapt waarvoor dit
     gebruikt wordt
-- je kan vlot in een groot computernetwerk tellen hoeveel IP netwerken
+- je kan vlot in een groot computernetwerk tellen hoeveel IP-netwerken
     er zijn
 - je weet dat ook een rechtstreekse link tussen twee routers een apart
-    IP netwerk is, en je begrijpt ondertussen waarom dit vaak een /30
+    IP-netwerk is, en je begrijpt ondertussen waarom dit vaak een /30
     netwerk is
 - je weet dat er nog andere types netwerkinterfaces en -kabels bestaan
     dan de veelgebruikte Ethernet UTP koperparen met RJ45 stekker, zoals
@@ -443,25 +442,25 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
     al verschillende protocollen zijn tegengekomen voor die L1: Ethernet
     met (elektrische) koperpaar-kabels, Ethernet met (licht-gebaseerde)
     glasvezelkabels, (elektrische) seriële verbindingen (de rode links
-    in packet tracer).
+    in Packet Tracer).
 - je weet dat de Ethernet standaard eigenlijk zowel L1 als L2
     beschrijft, en dat Ethernet L2 hetzelfde is voor koperkabels als
     voor glasvezelkabels
-- je begrijpt dat MAC adressen nodig zijn omdat ethernet een broadcast
+- je begrijpt dat MAC-adressen nodig zijn omdat ethernet een broadcast
     standaard is; broadcast wil eigenlijk zeggen dat er ook 3 of meer
     apparaten (3, 4, \...) op eenzelfde kabel kunnen aangesloten worden
     (beschouw een switch hier gerust als een kabel-knooppunt dat gewoon
     kabels doorverbindt, later nog meer over de werking van switches);
-    dus de MAC adressen laten toe om data voor een bepaalde bestemming
+    dus de MAC-adressen laten toe om data voor een bepaalde bestemming
     te addresseren terwijl er vele bestemmingen het elektrische signaal
     met het data frame ontvangen
 - je weet dat L2 in de seriële verbindingen geen adressen heeft, en
     dat dit ook niet nodig is omdat zo'n verbinding maar tussen twee
     apparaten is (er bestaan dan ook geen switches voor seriële
     verbindingen)
-- je kan het MAC adres van een PC terugvinden in packet tracer, maar
+- je kan het MAC-adres van een PC terugvinden in Packet Tracer, maar
     ook dat van je eigen (echte) PC
-- je kan het MAC adres van een router interface terugvinden in Cisco
+- je kan het MAC-adres van een router interface terugvinden in Cisco
     IOS via de command line
 - je weet dat er op de datalinklaag behalve unicast adressen ook een
     broadcast adres is, en er ook multicast adressen bestaan
@@ -477,17 +476,17 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
 ARP en PT simulatie:
 
-- je kent bedoeling van ARP; samengevat: hier is een IP adres, wie
+- je kent bedoeling van ARP; samengevat: hier is een IP-adres, wie
     heeft dit adres en wat is jouw MAC-adres?
-- je kan ARP frames laten zien in packet tracer simulatie
-- je kan in packet tracer ook frames van andere protocollen zien (DTP,
+- je kan ARP frames laten zien in Packet Tracer simulatie
+- je kan in Packet Tracer ook frames van andere protocollen zien (DTP,
     CDP, STP, \...)
-- je kan in packet tracer filteren op protocol, en zo bijvoorbeeld
+- je kan in Packet Tracer filteren op protocol, en zo bijvoorbeeld
     alleen ARP en ICMP laten zien in de simulator; later gebruik je deze
     filters ook om andere protocollen te bekijken bij foutopsporing of
     gewoon om iets bij te leren
-- je kan PC ARP tabel wissen om een nieuwe ARP te forceren
-- je weet dat een ARP request om een onbekend MAC adres te vinden, een
+- je kan PC ARP-tabel wissen om een nieuwe ARP te forceren
+- je weet dat een ARP request om een onbekend MAC-adres te vinden, een
     L2 broadcast pakket is
 - je weet dat ook een router een ARP request zal sturen als hij een
     destination IP heeft maar het destination MAC nog niet kent
@@ -498,15 +497,15 @@ ICMP en PT simulatie:
 - je weet dat een ping eigenlijk pakketjes stuurt volgens het ICMP
     protocol, en dat dit echo request en echo replies zijn die dan heen
     en weer gestuurd worden
-- je kan in packet tracer simulatie mode een ICMP echo request of
-    reply bekijken, en zowel source/destination MAC adres als
-    source/destination IP adres terugvinden; je vindt ook terug of een
+- je kan in Packet Tracer simulatie mode een ICMP echo request of
+    reply bekijken, en zowel source/destination MAC-adres als
+    source/destination IP-adres terugvinden; je vindt ook terug of een
     pakketje een request dan wel een reply is
 
-**Tip in Packet tracer**: gebruik de fast forward knop (dubbel pijl
+**Tip in Packet Tracer**: gebruik de fast forward knop (dubbel pijl
 naast de reset knop) om de simulatie te versnellen; dit is onder andere
 handig om het opstartproces (boot) van switch of router te versnellen,
-als je een tikfout gemaakt hebt en packet tracer name lookup start
+als je een tikfout gemaakt hebt en Packet Tracer name lookup start
 ("Translating \...").
 
 ### Ethernet switching / life of a packet
@@ -520,24 +519,24 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
     frame moet zijn
 - je snapt werking van switch op basis van de mac tabel, en je weet
     welke twee kolommen er in een mac tabel zitten
-- je weet dat een switch dynamisch leert welke MAC adressen achter
+- je weet dat een switch dynamisch leert welke MAC-adressen achter
     welke interface zitten
 - je kan een switch MAC-tabel wissen, en je weet wat het gevolg
     hiervan is
-- je kan in packet tracer volgende scenario's uitlokken en bekijken in
+- je kan in Packet Tracer volgende scenario's uitlokken en bekijken in
     simulatie: (1) een switch stuurt een broadcast frame door naar alle
     interfaces, (2) een switch stuurt een unicast frame door naar alle
     interfaces, (3) een switch stuurt een unicast frame door naar 1
     interface (je zorgt er uiteraard voor dat je een switch hebt waar
     genoeg interfaces in gebruik zijn)
-- je kan de huidige mac-tabel van een switch laten zien
+- je kan de huidige MAC-tabel van een switch laten zien
 - je snapt dat een L2 broadcast door een switch uiteraard wel naar
     alle interfaces wordt doorgestuurd
-- je weet dat switchen (in principe) zelf geen MAC adres hebben
+- je weet dat switchen (in principe) zelf geen MAC-adres hebben
 
 Life of a packet:
 
-- je begrijpt nu grondig L2 en L3 adressen (aka MAC en IP adressen) ,
+- je begrijpt nu grondig L2 en L3 adressen (aka MAC en IP-adressen) ,
     en hoe ze samenhangen, en je begrijpt "life of a packet", de video
     van Jeremy's IT, CCNA day 12.
 - je hebt nu voldoende geleerd om in een topologie met meerdere
@@ -551,15 +550,15 @@ Life of a packet:
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
-- je snapt dat de hele "ruimte" van alle bruikbare IPv4 adressen
+- je snapt dat de hele "ruimte" van alle bruikbare IPv4-adressen
     opgedeeld kan worden in subnetten, en dat een subnet zelf verder
     opgedeeld kan worden in kleiner subnetten
 - je kent de afkortingen FLSM (fixed length subnet mask) en VLSM
     (variable length subnet mask); je kan zelf subnetten berekenen,
     zowel in gelijke grootte als verschillende grootte
-- je snapt dat bij het indelen in subnetten er bruikbare IPv4 adressen
+- je snapt dat bij het indelen in subnetten er bruikbare IPv4-adressen
     verloren gaan (meer netwerkadressen en broadcastadressen)
-- je kan zelf een willekeurig IPv4 netwerk (bvb. 10.11.0.0/16) indelen
+- je kan zelf een willekeurig IPv4 netwerk (bijvoorbeeld 10.11.0.0/16) indelen
     in subnetten aan de hand van het gegeven aantal hosts in de
     verschillende subnetten
 - je snapt dat een bit meer of minder in een IPv4 netwerkdeel de
@@ -574,7 +573,7 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
 Kennis IPv6:
 
-- je weet dat een IPv6 adres 128 bits lang is (4x lengte van IPv4
+- je weet dat een IPv6-adres 128 bits lang is (4x lengte van IPv4
     adres)
 - je kent twee notaties: de volledige (hexadecimale) notatie, en de
     verkorte notatie; je kan de ene in de andere omzetten
@@ -584,14 +583,14 @@ Kennis IPv6:
     * eveneens opdeling in netwerkdeel en hostdeel (heel vaak 64+64
         bits)
 - je kent volgende verschillen tussen IPv6 en IPv4:
-  * soms is netwerkdeel van een IPv6 adres nog eens opgesplitst in
+  * soms is netwerkdeel van een IPv6-adres nog eens opgesplitst in
         een global routing prefix (48 bits) en een subnet ID (16 bits)
   * een interface met IPv6 krijgt meestal 2 adressen: een link-local
         adres (LLA) en een global unicast adres (GUA)
 - je herkent een LLA
 - je weet dat een LLA vaak automatisch wordt toegekend, en hierbij
-    afgeleid wordt van het MAC adres (volgens een standaard of principe
-    genaamd EUI-64), zodat het uniek is (omdat MAC adressen in principe
+    afgeleid wordt van het MAC-adres (volgens een standaard of principe
+    genaamd EUI-64), zodat het uniek is (omdat MAC-adressen in principe
     uniek zijn)
 - je weet dat een LLA niet gerouteerd wordt (door geen enkele router)
 - je weet dat een GUA wereldwijd uniek is, wel gerouteerd wordt, en
@@ -602,7 +601,7 @@ Kennis IPv6:
     ook pingen met IPv6
 - je weet dat IPv6 eveneens op L3 in het OSI model zit; het is gewoon
     een andere manier om laag 3 te implementeren; de laag eronder blijft
-    dezelfde (Ethernet MAC adressen) ; ARP bestaat echter niet voor IPv6
+    dezelfde (Ethernet MAC-adressen) ; ARP bestaat echter niet voor IPv6
     (zie verder)
 - je weet dat er voor IPv6 is er geen ARP protocol, maar wel een
     Network Discovery Protocol (ND of NDP) met gelijkaardige functie
@@ -613,34 +612,34 @@ Kennis IPv6:
     als ARP voor IPv4
 - je weet dat het ND protocol een L3 protocol is, terwijl ARP een L2
     protocol is; je ziet dus dat een gelijkaardig functie (namelijk het
-    vinden van het MAC adres van een host waarvan je het IP adres kent)
+    vinden van het MAC-adres van een host waarvan je het IP-adres kent)
     bij IPv6 in een hogere protocollaag zit dan bij IPv4
 
-Packet tracer met IPv6:
+Packet Tracer met IPv6:
 
 - je weet dat IPv6 in een router eerst moet aangezet worden
-- je kan alle IPv4 packet tracer configuratie-oefeningen nu ook met
+- je kan alle IPv4 Packet Tracer configuratie-oefeningen nu ook met
     IPv6 maken:
     * hosts configureren (met LLA en GUA)
     * router interfaces configureren (best ook met LLA en GUA)
     * statische routes toevoegen aan routers (alleen GUA)
 - (tip: neem al je gemaakte en bewaarde IPv4 oefeningen, en voeg er
     IPv6 aan toe)
-- je kan pingen met IPv6 adressen, host naar host, of host naar router
+- je kan pingen met IPv6-adressen, host naar host, of host naar router
     interface
 - je gebruikt ook eens een LLA op de routers/gateway met waarde +fe80::+ en 
   je test uit dat je elke router interface hetzelfde LLA adres +fe80::+ kan geven 
   omdat het LLA alleen binnen het L2 broadcast domein    uniek moet zijn
-- je kan NS en NA berichten zien in packet tracer waarbij een host het 
-    MAC adres vraagt van een IPv6 host in zijn broadcast domein 
+- je kan NS en NA berichten zien in Packet Tracer waarbij een host het 
+    MAC-adres vraagt van een IPv6 host in zijn broadcast domein 
 
 Eigen computer:
 
-- heb je op je eigen computer een IPv6 adres?
+- heb je op je eigen computer een IPv6-adres?
 - zie je IPv6 communicatie in wireshark?
-- vind je IPv6 adressen voor servers op het internet? wat geeft "ping
+- vind je IPv6-adressen voor servers op het internet? wat geeft "ping
     www.google.be" op je computer? het IPv4 of
-    het IPv6 adres?
+    het IPv6-adres?
 - kan je jouw default gateway pingen met ICMPv6?
 
 ### OSI vervolg, TCP/UDP, client-server, DNS, ...
@@ -704,7 +703,7 @@ Praktijk: in een wireshark "capture" kan je:
 
 Wat je niet moet kennen/kunnen voor deze stap:
 
-- je hoeft de betekenis van OSI lagen presentatie (L6) en sessie (L5)
+- je hoeft de betekenis van OSI-lagen presentatie (L6) en sessie (L5)
     niet te kennen
 
 ### IPv4 dynamische adressering (DHCP)
@@ -714,34 +713,34 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
 Kennis:
 
 - je begrijpt de bedoeling van DHCP
-- je weet welke extra configuratie (behalve IPv4 adres) via DHCP kan
+- je weet welke extra configuratie (behalve IPv4-adres) via DHCP kan
     doorgegeven worden
 - je weet dat het eerste pakket dat een DHCP client stuurt, een DHCP
     discover is, en dat dit een IPv4 broadcast pakket is
-- je weet waarom een DHCP server in het eigen netwerk moet zitten
+- je weet waarom een DHCP-server in het eigen netwerk moet zitten
     (tenzij er een relay is) ; je begrijpt dus het nut van een DHCP
     relay
-- je weet dat communicatie tussen DHCP relay en DHCP server unicast is
+- je weet dat communicatie tussen DHCP-relay en DHCP-server unicast is
 
-Packet tracer:
+Packet Tracer:
 
-- je kan een DHCP server configureren op een Cisco router
+- je kan een DHCP-server configureren op een Cisco router
 - je kan hosts configureren om DHCP client te zijn
 - je kan ook een Cisco router interface configuren om DHCP client te
     zijn
-- je kan een DHCP relay opzetten
+- je kan een DHCP-relay opzetten
 - je kan DNS informatie en domeinnaam meegeven bij de DHCP
     configuratie
-- je kan een PC in packet tracer het DHCP proces laten (her)starten,
+- je kan een PC in Packet Tracer het DHCP proces laten (her)starten,
     je kent release en renew opties in de ipconfig command prompt
 
 Eigen computer:
 
-- heb je al eens een dhcp release/renew gedaan op je eigen computer?
+- heb je al eens een DHCP release/renew gedaan op je eigen computer?
 - doe het ook eens terwijl wireshark draait.
 
 Vraag: heb je al eens nagekeken van welk L4 protocol DHCP gebruikmaakt?
-Kijk het eens na in een packet tracer simulatie. Of controleer het in
+Kijk het eens na in een Packet Tracer simulatie. Of controleer het in
 Wireshark op je eigen computer.
 
 
@@ -790,7 +789,7 @@ Kennis:
     je weet dus welk deel in een data frame wordt aangepast door het NAT
     proces
 - je begrijpt het basisprincipe achter NAT met overload (PAT), je weet
-    dus dat er behalve een IPv4 adres mogelijk ook een L4 poort wordt
+    dus dat er behalve een IPv4-adres mogelijk ook een L4 poort wordt
     aangepast
 - je begrijpt hoe een NAT router de pakketten van binnen naar buiten
     aanpast, maar ook hoe de NAT router de bijhorende pakketten (meestal
@@ -801,11 +800,11 @@ Kennis:
     gestart worden, terwijl er uiteindelijk toch in twee richtingen
     (request/reply) pakketten doorkomen
 
-Packet tracer:
+Packet Tracer:
 
 - je kan NAT configureren op een Cisco router, zowel statisch als
     dynamisch, en voor dynamisch zowel met als zonder overload
-- je kan via simulatie in packet tracer aantonen dat NAT zijn werk
+- je kan via simulatie in Packet Tracer aantonen dat NAT zijn werk
     juist doet
 
 Life of a packet:
@@ -824,19 +823,19 @@ Wat je niet moet kennen/kunnen:
 Probeer nu eens de volgende vragen te beantwoorden en/of opdrachten uit
 te voeren:
 
-- wat is het IPv4 adres van je eigen computer?
+- wat is het IPv4-adres van je eigen computer?
 - zit je achter een NAT voor IPv4? (tip: de kans is groot)
 - hoe zou je kunnen zien dat je achter een NAT zit? tip: er bestaan
-    webservers die het IPv4 adres waarnaar zij hun antwoorden
+    webservers die het IPv4-adres waarnaar zij hun antwoorden
     terugsturen, op de webpagina laten zien; snap je hoe dit werkt?
-- je begrijpt dat als het IPv4 adres dat je computer heeft niet
-    overeenkomt met het IPv4 adres waarnaar een web server zijn
+- je begrijpt dat als het IPv4-adres dat je computer heeft niet
+    overeenkomt met het IPv4-adres waarnaar een web server zijn
     antwoorden stuurt, je wel achter een NAT moet zitten
-- heb je een IPv6 adres, en kan je daarmee op het internet? en zo ja:
+- heb je een IPv6-adres, en kan je daarmee op het internet? en zo ja:
     zit je voor IPv6 ook achter een NAT? of ziet de server op het
-    internet het IPv6 adres van jouw computer?
+    internet het IPv6-adres van jouw computer?
 - heb je het netwerk dat je thuis gebruikt al eens in kaart gebracht?
-    heb je maar 1 toestel (bvb. de modem-router van de provider) of heb
+    heb je maar 1 toestel (bijvoorbeeld de modem-router van de provider) of heb
     je meerdere toestellen? indien meerdere: weet je waarvoor die andere
     toestellen dienen? Mogelijk dienen die andere toestellen vooral om
     je draadloze toegang te verschaffen.
@@ -857,7 +856,7 @@ Wat er typisch in een home-router zit, is een combinatie van:
         modulatie op gebruikt wordt; dit moet dus "geconverteerd" worden naar Ethernet/Wifi. 
   * Een router (omdat jouw thuisnetwerk een ander IPv4 en IPv6
         netwerk is dan het netwerk van jouw provider)
-  * Een NAT (omdat je waarschijnlijk maar 1 publiek IPv4 adres
+  * Een NAT (omdat je waarschijnlijk maar 1 publiek IPv4-adres
         gebruikt voor al jouw toestellen thuis)
   * Een switch: om meer dan 1 poort/interface in jouw thuisnetwerk
         te hebben, dus om meer dan 1 Ethernet apparaat aan jouw home-router te kunnen hangen
