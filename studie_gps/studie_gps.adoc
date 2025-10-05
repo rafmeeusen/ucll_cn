@@ -141,7 +141,7 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
         je dat hebt)
 
 
-### Eén IPv4 netwerk
+### Eén IPv4-netwerk
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
@@ -260,9 +260,9 @@ IPv4-adressen, basis
 - je kent de betekenis van een "broadcast"
 - je kan nagaan of twee IPv4-adressen (met gegeven netwerkmasker) in
     hetzelfde netwerk zitten of niet
-- je kan voor een gegeven IPv4 netwerk uitrekenen hoeveel geldige hostadressen 
+- je kan voor een gegeven IPv4-netwerk uitrekenen hoeveel geldige hostadressen 
   erin zitten (en je kan ze desnoods allemaal oplijsten)
-- je kan zelf meerdere IPv4 netwerken bedenken die geen overlap hebben
+- je kan zelf meerdere IPv4-netwerken bedenken die geen overlap hebben
 
 IPv4-adressen, types
 
@@ -284,7 +284,7 @@ Packet Tracer:
 - je kan in Packet Tracer aantonen dat een PC met IPv4 192.168.10.1/24
     en een PC met IPv4 192.168.11.1/24 niet met elkaar kunnen
     communiceren als er alleen switches en kabels gebruikt worden; en je
-    snapt dat dit is omdat ze niet in hetzelfde IPv4 netwerk zitten
+    snapt dat dit is omdat ze niet in hetzelfde IPv4-netwerk zitten
 
 Eigen computer:
 
@@ -293,10 +293,10 @@ Eigen computer:
 
 
 
-### Twee IPv4 netwerken / één router
+### Twee IPv4-netwerken / één router
 
 Vorige stap: we lieten eindapparaten met elkaar communiceren via IPv4,
-maar dat werkte alleen als deze apparaten in hetzelfde IPv4 netwerk
+maar dat werkte alleen als deze apparaten in hetzelfde IPv4-netwerk
 zaten. In deze stap zien we hoe apparaten in verschillende IPv4
 netwerken met elkaar kunnen communiceren door een router toe te voegen.
 
@@ -363,7 +363,7 @@ image::studie_gps_fig_twee_routers.png[]
 
 
 
-### Drie (of meer) IPv4 netwerken / statische routering
+### Drie (of meer) IPv4-netwerken / statische routering
 
 Je bent klaar met deze stap wanneer je het volgende kent of kan:
 
@@ -558,10 +558,10 @@ Je bent klaar met deze stap wanneer je het volgende kent of kan:
     zowel in gelijke grootte als verschillende grootte
 - je snapt dat bij het indelen in subnetten er bruikbare IPv4-adressen
     verloren gaan (meer netwerkadressen en broadcastadressen)
-- je kan zelf een willekeurig IPv4 netwerk (bijvoorbeeld 10.11.0.0/16) indelen
+- je kan zelf een willekeurig IPv4-netwerk (bijvoorbeeld 10.11.0.0/16) indelen
     in subnetten aan de hand van het gegeven aantal hosts in de
     verschillende subnetten
-- je snapt dat een bit meer of minder in een IPv4 netwerkdeel de
+- je snapt dat een bit meer of minder in een IPv4-netwerkdeel de
     grootte van het netwerk halveert of verdubbelt; bijvoorbeeld een /30
     netwerk heeft 4 adressen (waarvan 2 hostadressen), een /29 netwerk
     heeft 8 adressen (waarvan 6 hostadressen), een /28 heeft 16 adressen
